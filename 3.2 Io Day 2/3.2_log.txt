@@ -1,0 +1,266 @@
+io
+Io 20110905
+Io> postOffice := Object clone
+==>  Object_0x10872f0:
+
+Io> postOffice packageSender := method(call sender)
+==> method(
+    call sender
+)
+Io> call sender
+
+  Exception: Object does not respond to 'call'
+  ---------
+  Object call                          Command Line 1
+
+Io> sender
+
+  Exception: Object does not respond to 'sender'
+  ---------
+  Object sender                        Command Line 1
+
+Io> a := method(call sender)
+==> method(
+    call sender
+)
+Io> a
+==>  Object_0xd569f0:
+  Lobby            = Object_0xd569f0
+  Protos           = Object_0xd56810
+  _                = Object_0xd569f0
+  a                = method(...)
+  exit             = method(...)
+  forward          = method(...)
+  postOffice       = Object_0x10872f0
+  set_             = method(...)
+
+Io> Global
+
+  Exception: Object does not respond to 'Global'
+  ---------
+  Object Global                        Command Line 1
+
+Io> b := method(message)
+==> method(
+    message
+)
+Io> b
+==> nil
+Io> b := method(call message)
+==> method(
+    call message
+)
+Io> b
+==> b
+Io> admin
+
+  Exception: Object does not respond to 'admin'
+  ---------
+  Object admin                         Command Line 1
+
+Io> b := method(puts message)
+==> method(
+    puts message
+)
+Io> b
+
+  Exception: Object does not respond to 'puts'
+  ---------
+  Object puts                          Command Line 1
+  Object b                             Command Line 1
+
+Io> b := method(print message)
+==> method(
+    print message
+)
+Io> b
+Object_0x1054940 do(
+  appendProto(Object_0xd61290)
+==> nil
+Io> b := method(print message proto)
+==> method(
+    print message proto
+)
+Io> b
+Object_0xf21110 do(
+  appendProto(Object_0xd61290)
+==>  Object_0xd32a20:
+                   = Object_()
+  !=               = Object_!=()
+  -                = Object_-()
+  ..               = method(arg, ...)
+  <                = Object_<()
+  <=               = Object_<=()
+  ==               = Object_==()
+  >                = Object_>()
+  >=               = Object_>=()
+  ?                = method(...)
+  @                = method(...)
+  @@               = method(...)
+  actorProcessQueue = method(...)
+  actorRun         = method(...)
+  addTrait         = method(obj, ...)
+  ancestorWithSlot = Object_ancestorWithSlot()
+  ancestors        = method(a, ...)
+  and              = method(v, ...)
+  appendProto      = Object_appendProto()
+  apropos          = method(keyword, ...)
+  argIsActivationRecord = Object_argIsActivationRecord()
+  argIsCall        = Object_argIsCall()
+  asBoolean        = Object_asBoolean()
+  asSimpleString   = method(...)
+  asString         = method(keyword, ...)
+  asyncSend        = method(...)
+  become           = Object_become()
+  block            = Object_block()
+  break            = Object_break()
+  clone            = Object_clone()
+  cloneWithoutInit = Object_cloneWithoutInit()
+  compare          = Object_compare()
+  contextWithSlot  = Object_contextWithSlot()
+  continue         = Object_continue()
+  coroDo           = method(...)
+  coroDoLater      = method(...)
+  coroFor          = method(...)
+  coroWith         = method(...)
+  currentCoro      = method(...)
+  deprecatedWarning = method(newName, ...)
+  do               = Object_do()
+  doFile           = Object_doFile()
+  doMessage        = Object_doMessage()
+  doRelativeFile   = method(path, ...)
+  doString         = Object_doString()
+  evalArg          = Object_evalArg()
+  evalArgAndReturnNil = Object_evalArgAndReturnNil()
+  evalArgAndReturnSelf = Object_evalArgAndReturnSelf()
+  for              = Object_for()
+  foreachSlot      = method(...)
+  futureSend       = method(...)
+  getLocalSlot     = Object_getLocalSlot()
+  getSlot          = Object_getSlot()
+  handleActorException = method(e, ...)
+  hasDirtySlot     = Object_hasDirtySlot()
+  hasLocalSlot     = Object_hasLocalSlot()
+  hasProto         = Object_hasProto()
+  hasSlot          = method(n, ...)
+  if               = Object_if()
+  ifError          = method(...)
+  ifNil            = Object_thisContext()
+  ifNilEval        = Object_thisContext()
+  ifNonNil         = Object_evalArgAndReturnSelf()
+  ifNonNilEval     = Object_evalArg()
+  in               = method(aList, ...)
+  init             = Object_init()
+  inlineMethod     = method(...)
+  isActivatable    = Object_isActivatable()
+  isError          = false
+  isIdenticalTo    = Object_isIdenticalTo()
+  isKindOf         = method(anObject, ...)
+  isLaunchScript   = method(...)
+  isNil            = false
+  isTrue           = true
+  justSerialized   = method(stream, ...)
+  launchFile       = method(path, args, ...)
+  lazySlot         = method(...)
+  lexicalDo        = Object_lexicalDo()
+  list             = method(...)
+  loop             = Object_loop()
+  markClean        = Object_markClean()
+  memorySize       = Object_memorySize()
+  message          = Object_message()
+  method           = Object_method()
+  newSlot          = method(name, value, doc, ...)
+  not              = nil
+  or               = true
+  ownsSlots        = Object_ownsSlots()
+  pause            = method(...)
+  perform          = Object_perform()
+  performWithArgList = Object_performWithArgList()
+  prependProto     = Object_prependProto()
+  print            = method(...)
+  println          = method(...)
+  proto            = Object_proto()
+  protos           = Object_protos()
+  raiseIfError     = method(...)
+  relativeDoFile   = method(path, ...)
+  removeAllProtos  = Object_removeAllProtos()
+  removeAllSlots   = Object_removeAllSlots()
+  removeProto      = Object_removeProto()
+  removeSlot       = Object_removeSlot()
+  resend           = method(...)
+  return           = Object_return()
+  returnIfError    = method(...)
+  returnIfNonNil   = Object_returnIfNonNil()
+  serialized       = method(stream, ...)
+  serializedSlots  = method(stream, ...)
+  serializedSlotsWithNames = method(names, stream, ...)
+  setIsActivatable = Object_setIsActivatable()
+  setProto         = Object_setProto()
+  setProtos        = Object_setProtos()
+  setSlot          = Object_setSlot()
+  setSlotWithType  = Object_setSlotWithType()
+  shallowCopy      = Object_shallowCopy()
+  slotDescriptionMap = method(...)
+  slotNames        = Object_slotNames()
+  slotSummary      = method(keyword, ...)
+  slotValues       = Object_slotValues()
+  stopStatus       = Object_stopStatus()
+  super            = method(...)
+  switch           = method(...)
+  thisContext      = Object_thisContext()
+  thisLocalContext = Object_thisLocalContext()
+  thisMessage      = Object_thisMessage()
+  try              = method(...)
+  type             = Object_type()
+  uniqueHexId      = method(...)
+  uniqueId         = Object_uniqueId()
+  updateSlot       = Object_updateSlot()
+  wait             = method(s, ...)
+  while            = Object_while()
+  write            = Object_write()
+  writeln          = Object_writeln()
+  yield            = method(...)
+
+Io> 
+
+Io> postOffice := Object clone
+==>  Object_0x10ce890:
+
+Io> postOffice packageSender := method(call sender)
+==> method(
+    call sender
+)
+Io> mailer := Object clone
+==>  Object_0xe5d130:
+
+Io> mailer deliver := method(postOffice packageSender)
+==> method(
+    postOffice packageSender
+)
+Io> mailer deliver
+==>  Object_0xe5d130:
+  deliver          = method(...)
+
+Io> postOffice messageTarget := method(call target)
+==> method(
+    call target
+)
+Io> postOffice messageTarget
+==>  Object_0x10ce890:
+  messageTarget    = method(...)
+  packageSender    = method(...)
+
+Io> postOffice messageArgs := method(call message arguments)
+==> method(
+    call message arguments
+)
+Io> postOffice messageName := method(call message name)
+==> method(
+    call message name
+)
+Io> postOffice messageArgs("one", 2, :three)
+==> list("one", 2, : three)
+Io> postOffice messageName
+==> messageName
+Io> 
+
