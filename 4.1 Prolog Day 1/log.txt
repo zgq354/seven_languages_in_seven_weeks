@@ -1,0 +1,245 @@
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- ['friends.pl']
+.
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/friends.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/friends.pl:1:2: syntax error: . or operator expected after expression
+        1 error(s)
+compilation failed
+
+(1 ms) no
+| ?- ['friends.pl'].
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/friends.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/friends.pl compiled, 5 lines read - 1057 bytes written, 14 ms
+
+(1 ms) yes
+| ?- ['friends.pl'].
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/friends.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/friends.pl compiled, 5 lines read - 1058 bytes written, 17 ms
+
+yes
+| ?- likes(wallace, sheep)
+.
+
+no
+| ?- likes(grommit, cheese)
+.
+
+yes
+| ?- ['food.pl']
+.
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/food.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/food.pl compiled, 12 lines read - 1527 bytes written, 16 ms
+
+yes
+| ?- food_type(What, meat).
+
+What = sausage ?
+Action (; for next solution, a for all solutions, RET to stop) ? ;
+
+no
+| ?- food_type(What, meat).
+
+What = sausage ? s
+Action (; for next solution, a for all solutions, RET to stop) ?
+Action (; for next solution, a for all solutions, RET to stop) ? a
+
+no
+| ?- food_type(What, meat).
+
+What = sausage ? a
+
+no
+| ?- What = spam?;
+
+d
+
+uncaught exception: error(syntax_error('user_input:14 (char:13) . or operator expected after expression'),read_term/3)
+| ?- food_type(What, meat).
+
+What = sausage ?
+
+yes
+| ?- ls
+.
+uncaught exception: error(existence_error(procedure,ls/0),top_level/0)
+| ?- ['food.pl'].
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/food.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/food.pl compiled, 13 lines read - 1616 bytes written, 15 ms
+
+yes
+| ?- food_type(What, meat).
+
+What = spam ? ;
+
+What = sausage ?
+
+yes
+| ?- food_type(What, meat).
+
+What = spam ?
+
+yes
+| ?- food_type(What, meat).
+
+What = spam ? ;
+
+What = sausage ?
+
+yes
+| ?- food_type(What, meat).
+
+What = spam ? ;
+
+What = sausage ? ;
+
+no
+| ?- flavor(sweet, What).
+
+What = dessert ? ;
+
+What = soda
+
+yes
+| ?- food_type(Wh, meat).
+
+Wh = spam ?
+
+yes
+| ?- flavor(What, savory).
+
+no
+| ?- food_flavor(What, savory).
+
+What = velveeta ?
+
+yes
+| ?- food_
+food_flavor  food_type
+| ?- food_type(What, meat)
+.
+
+What = spam ? ;
+
+What = sausage ? ;
+
+no
+| ?- food_flavor(sausage, me
+meat       member     memberchk
+| ?- food_flavor(sausage, sweet).
+
+no
+| ?- flavor(sweet, Wh
+Wh    What
+| ?- flavor(sweet, What).
+
+What = dessert ? ;
+
+What = soda
+
+yes
+| ?- ['map.pl']
+.
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/map.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/map.pl:5-13: warning: singleton variables [Grorgia] for coloring/5
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/map.pl compiled, 14 lines read - 1798 bytes written, 13 ms
+
+yes
+| ?- coloring(Alabama, Mississippi, Georgia, Tennessee, Florida).
+
+Alabama = blue
+Florida = green
+Mississippi = red
+Tennessee = green ? ;
+
+Alabama = green
+Florida = blue
+Mississippi = red
+Tennessee = blue ? ;
+
+Alabama = blue
+Florida = red
+Mississippi = green
+Tennessee = red ? ;
+
+Alabama = red
+Florida = blue
+Mississippi = green
+Tennessee = blue ? ;
+
+Alabama = green
+Florida = red
+Mississippi = blue
+Tennessee = red ? ;
+
+Alabama = red
+Florida = green
+Mississippi = blue
+Tennessee = green ? ;
+
+no
+| ?- ['onmy.pl']
+.
+compiling /home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/onmy.pl for byte code...
+/home/qing/Desktop/seven_languages_in_seven_weeks/4.1 Prolog Day 1/onmy.pl compiled, 4 lines read - 845 bytes written, 15 ms
+
+yes
+| ?- dorothy(lion, tig
+tiger  tight
+| ?- dorothy(lion, tiger, bear).
+
+yes
+| ?- dorothy(One, Two, Three).
+
+One = lion
+Three = bear
+Two = tiger
+
+yes
+| ?- twin_cats(One, Two).
+
+One = lion
+Two = lion ?
+
+yes
+| ?- twin_cats(One, Two).
+
+One = lion
+Two = lion ? ;
+
+One = lion
+Two = tiger ? ;
+
+One = tiger
+Two = lion ? ;
+
+One = tiger
+Two = tiger
+
+yes
+| ?- dorothy(One, Two, Three).
+
+One = lion
+Three = bear
+Two = tiger
+
+yes
+| ?- twin_cats(One, Two).
+
+One = lion
+Two = lion ? a
+
+One = lion
+Two = tiger
+
+One = tiger
+Two = lion
+
+One = tiger
+Two = tiger
+
+yes
+| ?-
+
+
